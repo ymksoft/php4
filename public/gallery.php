@@ -6,6 +6,6 @@ echo render(TEMPLATES_DIR . 'index.tpl', [
 	'title' => 'Галерея',
 	'h1' => 'Галерея',
 	'content' => render(TEMPLATES_DIR . 'gallery.tpl', [
-		'content' => createGallaryContent()
+		'content' => createGalleryContent()
 	])
 ]);

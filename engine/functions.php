@@ -29,14 +29,14 @@ function render($file, $variables = [])
 	return $templateContent;
 };
 
-function createGallaryContent() {
+function createGalleryContent() {
 
 	$arrImg = array_slice( scandir(IMG_DIR), 2 );
 
 	$content = '<div>';
 
 	foreach($arrImg as $imgFile) {
-		$content.= '<a target=_blank href='.IMG_DIR.$imgFile.'><img src='.IMG_DIR.$imgFile.'></a>';
+		$content.= '<a target=_blank href='.IMG_DIR.$imgFile.'><img class="smallimg" src='.IMG_DIR.$imgFile.'></a>';
 	};
 	$content .= '</div>';
 
